@@ -1,0 +1,32 @@
+.footer-section {
+    height: 130px;
+}
+.footer-section .container {
+    display: flex;
+    align-content: center;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.social-logos a {
+    text-decoration: none;
+
+}
+.social-logos {
+    margin: 0 50px;
+    display: inline-block;
+}
+small {
+    color: #bababa;
+    margin-top: 12px;
+}
+.footer-section .logo {
+    color: #bababa;
+    margin-bottom: 10px;
+}
+.footer-section .logo-on {
+    color: #bababa;
+}
+.footer-logos {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,72 @@
+.page-header {
+    height: 40px;
+    background: black;
+}
+.page-header .container  {
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.menu li{
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+
+}
+.menu .menu-submenu {
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #000;
+    opacity:0; /* plynne pokazywanie podmenu */
+    visibility:hidden;
+    transition: 0.5s opacity;
+    z-index: 1000;
+}
+.menu li:hover .menu-submenu {
+    opacity:1;
+    visibility:visible;
+}
+.menu li:hover {
+    background: #21b9a2;
+}
+
+
+.menu .menu-submenu li a {
+    margin-left: 0;
+    height: 30px;
+    line-height: 40px;
+    text-transform: none;
+    font-weight: normal;
+    padding:0 20px;
+}
+/*element after zapobiegający znikaniu podmenu*/
+.menu .menu-submenu:after {
+    content: "";
+    position: absolute;
+    left:0;
+    top:-17px;
+    width:100%;
+    height:17px;
+}
+/*dziubek w podmenu*/
+.menu .menu-submenu:before {
+    content:'';
+    width:0;
+    height:0;
+    border:10px solid transparent; /* rgba(0,0,0,0); */
+    border-bottom-color:#000;
+    position: absolute;
+    left:50%;
+    top:-20px;
+    transform: translate(-50%, 0);
+}

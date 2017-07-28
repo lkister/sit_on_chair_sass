@@ -1,0 +1,21 @@
+{
+  "name": "sit_on_chair",
+  "version": "1.0.0",
+  "description": "Warsztaty CodersLab ### Łukasz Kister ========================",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkister/sit_on_chair.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkister/sit_on_chair/issues"
+  },
+  "homepage": "https://github.com/lkister/sit_on_chair#readme"
+}
