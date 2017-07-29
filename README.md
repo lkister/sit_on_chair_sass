@@ -11,3 +11,4 @@ Used technologies:
 5. GULP
 
 Webpage preview [LINK](https://lkister.github.io/sit_on_chair_sass/index.html)
+![screenshot](/sit_on_chair-fullpage.png)
