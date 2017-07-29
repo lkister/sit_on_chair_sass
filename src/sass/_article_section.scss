@@ -15,19 +15,44 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
+    width: 329px;
+    height: 225px;
+    margin-top: 25px;
+    border: 1px solid #dcdcdc;
 }
-.article-image-section img {
+.article-image-section-background {
     width: 100%;
     height: 100%;
-    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.bg-one {
+    background-image: url("../images/box1_img.jpg");
+}
+.bg-two {
+    background-image: url("../images/box2_img.jpg");
+}
+.article-image-section:hover .article-image-section-background {
+    transform: scale(1.2);
+}
+// .article-image-section img {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     transition: 0.5s all;
+// }
+.article-image-section .article-image-text {
+    font-size: 15px;
+    position: absolute;
+    top: 70px;
+    padding: 5px 30px 0 30px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    color: rgba(0, 0, 0, 0);
     transition: 0.5s all;
 }
-/*.article-image-section .article-image-text {*/
-    /*overflow: hidden;*/
-    /*height:0;*/
-    /*color:rgba(0,0,0,0);*/
-    /*transition: 0.5s height, 0.5s color;*/
-/*}*/
 .article-image-section .article-image-description {
     position:absolute;
     padding:10px;
@@ -51,22 +76,15 @@
     color: #8b8b8b;
     margin-top: 10px;
 }
-.article-image-section:hover img {
-    transform: scale(1.2,1.2);
+.article-image-section:hover .article-image-text {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #21b9a2;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    padding: 30px;
 }
-
-
-/*!*.article-image-section:hover img {*!*/
-    /*!*transform: scale(1.2,1.2);*!*/
-/*!**!*/
-/*!*.article-image-section:hover .article-image-description {*!*/
-    /*!*top:0;*!*/
-    /*!*height: 100%;*!*/
-    /*!*background: rgba(255,255,255,1);*!*/
-    /*!*border:1px solid #ddd;*!*/
-    /*!*padding:10px;*!*/
-/*!*}*!*/
-/*.article-image-section:hover {*/
-    /*height: 100%;*/
-    /*color: rgba(255,255,255,1);*/
-/*}*/

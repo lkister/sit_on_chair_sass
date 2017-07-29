@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
     var sum = 0;
     var summarize = document.querySelector('.sum strong');
     var checkbox = document.querySelector('#transport');
+    var images = document.querySelector('.image_part');
+    var chairChoosen = document.querySelector('.drop_down_list span');
 
     for (var i = 0; i < listArrow.length; i++) {
         listArrow[i].addEventListener('click', function(e) {
@@ -79,6 +81,21 @@ document.addEventListener('DOMContentLoaded', function(e) {
                     }
                     if (sum>=0) {
                         summarize.innerText = sum + " zł";
+                    }
+                    if (chairChoosen.innerText == "Margarita") {
+                        images.children[0].classList.add("image-hidden");
+                        images.children[2].classList.add("image-hidden");
+                        images.children[1].classList.remove("image-hidden");
+                    }
+                    if (chairChoosen.innerText == "Selena") {
+                        images.children[1].classList.add("image-hidden");
+                        images.children[2].classList.remove("image-hidden");
+                        images.children[0].classList.add("image-hidden");
+                    }
+                    if (chairChoosen.innerText == "Clair") {
+                        images.children[2].classList.add("image-hidden");
+                        images.children[0].classList.remove("image-hidden");
+                        images.children[1].classList.add("image-hidden");
                     }
                 });
             }
