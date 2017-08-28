@@ -1,5 +1,5 @@
 # sit_on_chair
-## [Click here for live preview](https://lkister.github.io/sit_on_chair_sass/src/dist/index.html)
+## [Click here for live preview](https://lkister.github.io/webpage_Sit_On_Chair/src/dist/index.html)
 
 From PSD to HTML.  
 Webpage with simple store functionality.  
