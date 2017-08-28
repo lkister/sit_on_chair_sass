@@ -1,14 +1,14 @@
 # sit_on_chair
-## Developed by Lukasz Kister
+## [Click here for live preview](https://lkister.github.io/sit_on_chair_sass/src/dist/index.html)
 
-Project developed during CodersLab workshop.
+From PSD to HTML.  
+Webpage with simple store functionality.  
 
-Used technologies:
+Technologies used:
 1. HTML
 2. CSS
-3. JavaScript (VanillaJS)
-4. SASS
+3. JavaScript
+4. Sass
 5. GULP
 
-Webpage preview [LINK](https://lkister.github.io/sit_on_chair_sass/index.html)
 ![screenshot](/sit_on_chair-fullpage.png)
